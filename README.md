@@ -18,7 +18,7 @@ O sistema classifica as moedas por valor (R$0.10, R$0.25, R$0.50, R$1.00) e forn
 - [x] Interface de linha de comando interativa
 - [x] Persistência de dados (salvar/recuperar estado do cofre)
 
-##Materiais
+## Materiais
 - 1 Arduino (Uno ou similar)
 - 1 Teclado de Membrana 4x4
 - 1 Display LCD 16x2 com Módulo I2C
