@@ -18,12 +18,6 @@ O sistema classifica as moedas por valor (R$0.10, R$0.25, R$0.50, R$1.00) e forn
 - [x] Interface de linha de comando interativa
 - [x] Persistência de dados (salvar/recuperar estado do cofre)
 
-## Como Compilar e Executar
-
-### Pré-requisitos
-- Compilador C++ (g++ recomendado)
-- Sistema operacional Windows/Linux/Mac
-
 ## Contato
 
 Lucas Ryan - lucasryandkz@cin.ufpe.br
