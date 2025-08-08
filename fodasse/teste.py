@@ -1,9 +1,9 @@
 import pygame
-from Telas import Tela_jogo
+from fodasse.Tela import Tela
 pygame.init()
 
 # --- Configurações e Cores ---
-tela = pygame.display.set_mode((Tela_jogo.largura, Tela_jogo.altura))
+tela = pygame.display.set_mode((Tela.largura, Tela.altura))
 pygame.display.set_caption("Coletáveis com Efeitos Diferentes")
 
 PRETO = (0, 0, 0)
@@ -88,9 +88,9 @@ while (rodando):
      # --- Movimento do Jogador ---
     teclas = pygame.key.get_pressed()
     if teclas[pygame.K_LEFT] and player_rect.left > 0: player_rect.x -= velocidade_jogador
-    if teclas[pygame.K_RIGHT] and player_rect.right < Tela_jogo.largura: player_rect.x += velocidade_jogador
+    if teclas[pygame.K_RIGHT] and player_rect.right < Tela.largura: player_rect.x += velocidade_jogador
     if teclas[pygame.K_UP] and player_rect.top > 0: player_rect.y -= velocidade_jogador
-    if teclas[pygame.K_DOWN] and player_rect.bottom < Tela_jogo.altura: player_rect.y += velocidade_jogador
+    if teclas[pygame.K_DOWN] and player_rect.bottom < Tela.altura: player_rect.y += velocidade_jogador
 
     #impedir dele sair da tela:
 

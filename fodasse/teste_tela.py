@@ -1,5 +1,5 @@
 import pygame
-from Telas import Tela_inicial
+from fodasse.Tela import Tela
 pygame.init()
 
 #classe botão
@@ -25,13 +25,13 @@ class Botao():
 
 # --- Seção de carregamento e posicionamento ---
 # Imagem de fundo
-imagem_tela_start = pygame.transform.scale(pygame.image.load('Tela inicial.jpg').convert(), (Tela_inicial.largura, Tela_inicial.altura))
+imagem_tela_start = pygame.transform.scale(pygame.image.load('Tela inicial.jpg').convert(), (Tela.largura, Tela.altura))
 
 
 #criação dos botoes
 
-botao_jogar = Botao(Tela_inicial.largura // 2, Tela_inicial.altura*0.7, 'Frame 2.png', 'Frame 14 (2).png')
-botao_sair = Botao(Tela_inicial.largura // 2, Tela_inicial.altura*0.8, 'Frame 2 (1).png', 'Frame 13.png')
+botao_jogar = Botao(Tela.largura // 2, Tela.altura*0.7, 'Frame 2.png', 'Frame 14 (2).png')
+botao_sair = Botao(Tela.largura // 2, Tela.altura*0.8, 'Frame 2 (1).png', 'Frame 13.png')
 
 
 lista_de_botoes = [botao_jogar, botao_sair]
@@ -53,12 +53,12 @@ while (rodando):
                 print("Clicou em JOGAR! (Aqui você mudaria para a tela do jogo)")
 
     # --- Seção de Desenho ---
-    Tela_inicial.tela.blit(imagem_tela_start, (0,0))
+    Tela.tela.blit(imagem_tela_start, (0,0))
 
     # Desenha todos os botões da lista
     for botao in lista_de_botoes:
         botao.checar_hover(posicao_mouse)
-        botao.desenhar(Tela_inicial.tela)
+        botao.desenhar(Tela.tela)
 
     pygame.display.flip()
 
